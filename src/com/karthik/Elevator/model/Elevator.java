@@ -1,5 +1,6 @@
 package com.karthik.Elevator.model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import com.karthik.Elevator.util.Direction;
@@ -10,7 +11,7 @@ public class Elevator
 	private int capacity;
 	private int currentFloor;
 	private Direction currentDirection;
-	private List<Request> requests;
+	private List<Request> requests = new ArrayList<>();
 
 	public Elevator(int id, int capacity)
 	{

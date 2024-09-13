@@ -13,9 +13,9 @@ public class ElevatorController
 	public ElevatorController(int numElevators, int capacity)
 	{
 		elevators = new ArrayList<>();
-		for (int i = 0; i < numElevators; i++)
+		for (int i = 1; i <= numElevators; i++)
 		{
-			Elevator elevator = new Elevator(i + 1, capacity);
+			Elevator elevator = new Elevator(i, capacity);
 			elevators.add(elevator);
 			new Thread(elevator::run).start();
 		}
